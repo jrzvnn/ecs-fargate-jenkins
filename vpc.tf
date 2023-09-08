@@ -1,3 +1,5 @@
+# vpc.tf
+
 locals {
   private_subnet_ids = [for k, v in aws_subnet.private : v.id]
   public_subnet_ids  = [for k, v in aws_subnet.public : v.id]
